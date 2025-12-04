@@ -191,3 +191,85 @@ Binary Search	O(log n)
 Sorting (Quick/Heap/Merge)	O(n log n)
 HashMap lookup	O(1)
 
+*********†********************************
+
+Big-O ka “O” ka matlab hota hai “Order of”.
+Matlab kis rate se aapka code slow/fast hota hai jab input size n badhta hai.
+
+
+---
+
+⭐ Big-O Meaning
+
+Big-O = Order of Growth
+Ye measure karta hai ki input badhne par code ki speed kaise grow karti hai.
+
+O(n) → "Order of n" (linear growth)
+
+O(n²) → "Order of n square" (quadratic growth)
+
+O(log n) → "Order of log n"
+
+O(1) → "Order of constant"
+
+
+Yaani “O” ka matlab Order hai — code kis order me grow karega.
+
+
+---
+
+⭐ Simple Explanation
+
+Agar main bolu:
+
+O(n) time
+
+→ Time input ke proportional grow hoga.
+
+O(n²) time
+
+→ Time square ke proportional grow hoga.
+
+O(1) time
+
+→ Time constant rahega, input se fark nahi padega.
+
+
+---
+
+⭐ Big-O kyun use hota hai?
+
+Because humko pata karna hota hai:
+
+Code input badhne par kitna slow hoga?
+
+Kaunsi function fastest hai?
+
+Kaunsa algorithm zyada scalable hai?
+
+
+Big-O ek math ka formula jaisa hota hai jo growth rate batata hai.
+
+
+---
+
+⭐ Real-life Analogy
+
+Agar tum Auto rickshaw lo → travel = O(n)
+(road jitni lambi hogi, time utna bada)
+
+Agar tum bicycle me circular route lo → O(n²) jaisa slow feel hoga
+(distance badhti hai to time bohot fast badhta hai)
+
+Agar tum lift chadh rahi ho → O(1)
+(floor ka button dabaya, timing almost same)
+
+
+---
+
+⭐ Final Line (Simple)
+
+Big-O me “O” ka matlab hota hai — “Order of Growth”.
+Ye batata hai input size badhne par algorithm ka performance kis rate se grow karta hai.
+
+
