@@ -139,19 +139,42 @@ for (i = 0; i < n; i++) {
 
 🧮 SPACE COMPLEXITY
 
-Space Complexity = Program ko chalne ke liye extra memory kitni lagti hai.
+Space Complexity = Program ko chalne ke liye **extra memory (auxiliary space)** kitni lagti hai.
 
-✔ O(1) Space
+Space complexity do chizo ka sum hoti hai:
 
-(Only 1 variable)
+1. **Input Space** → jo memory input ko store karne me lagti hai.  
+2. **Auxiliary Space** → jo memory *extra* calculations me use hoti hai.
 
-let x = 10;
+---
 
-✔ O(n) Space
+## ⭐ Example 1: Simple Variables → O(1) Space
 
-(Uses extra memory for array)
+```js
+let a = 10;
+let b = 20;
+let c = a + b;
 
-let arr = [1,2,3,4,5];
+a, b, c → three variables
+
+Lekin fixed number of variables, input par depend nahi karta
+✔ Space Complexity = O(1)
+(Fixed constant space)
+
+
+Note: c extra memory (auxiliary space) use karta hai → still constant.
+
+
+---
+
+⭐ Example 2: Array Memory → O(n) Space
+
+let arr = [1, 2, 3, 4, 5];
+
+Array ka size = n
+
+Memory grows with input size
+✔ Space Complexity = O(n)
 
 
 ---
@@ -168,28 +191,3 @@ Binary Search	O(log n)
 Sorting (Quick/Heap/Merge)	O(n log n)
 HashMap lookup	O(1)
 
-
-
----
-
-⭐ Super Important Lines (Lifelong Useful)
-
-Time complexity real-time nahi hota, growth hota hai.
-
-Worst-case hi consider hota hai.
-
-Constants ignore hote hain.
-
-Nested loops → multiply.
-
-Separate loops → add = still O(n).
-
-Space complexity → extra memory used.
-
-
-
----
-
----
-
-If you want, I can also give you a **second version with Laravel, Django, SQL relatable examples** to add below this.
